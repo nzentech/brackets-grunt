@@ -44,10 +44,14 @@ define(function (require, exports, module) {
 			.done(function (tasks) {
 				//togglePanel();
 				debugger;
-				panel.$panel.find("#tasks").html(Mustache.render(taskTemplate, {tasks: tasks}));
+				var  _tasks = [];
+				var _keys = Object.keys(tasks);
+				_keys.forEach(function (key) {
+					_tasks.push(tasks[key]);
+				});
+				panel.$panel.find("#tasks").html(Mustache.render(taskTemplate, {tasks: _tasks}));
 			}).fail(function (err) {
-				debugger;
-				console.error("[brackets-simple-node] failed to run simple.getMemory", err);
+				console.error("[brackets-grunt] failed to load tasks", err);
 			});
 	}
 	
@@ -70,10 +74,6 @@ define(function (require, exports, module) {
 		ExtensionUtils.loadStyleSheet(module, "style/style.css");
 		
 		panel = PanelManager.createBottomPanel("grunt.panel", $(panelHtml), 100);
-//		panel.$panel.on("click", ".task", function (e) {
-//			
-//			runTask(e.currentTarget.getAttribute("task-name"));
-//		});
         
         panel.$panel.on("click", ".exec-button", function (e) {
 			

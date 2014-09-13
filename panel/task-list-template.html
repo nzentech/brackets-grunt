@@ -1,8 +1,8 @@
 
 	<table class="task-table table table-striped table-condensed row-highlight">
 	{{#tasks}}
-		<tr class="task" task-name="{{.}}">
-			<td>{{.}} <a class="exec-button btn btn-mini primary" task-name="{{.}}">Execute</a></td>
+		<tr class="task" task-name="{{.name}}">
+			<td><b>{{name}} </b>&nbsp;::&nbsp;<i>{{info}}</i><a class="exec-button btn btn-mini primary" task-name="{{name}}">Execute</a></td>
 		</tr>
 	{{/tasks}}
 	</table>

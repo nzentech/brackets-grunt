@@ -19,7 +19,7 @@
 		require.searchCache(moduleName, function (mod) {
 			delete require.cache[mod.id];
 		});
-	}
+	};
 
 
 	require.searchCache = function (moduleName, callback) {
@@ -42,7 +42,7 @@
 				callback(mod);
 			})(mod);
 		}
-	}
+	};
 
         
     function getTasks(path) {
@@ -54,9 +54,7 @@
 		grunt.option('gruntfile', path + "Gruntfile.js");
 		grunt.task.init([]);
 		
-	
-		var  _tasks = Object.keys(grunt.task._tasks).sort();
-		return _tasks;
+		return grunt.task._tasks;
     }
 	
 	
