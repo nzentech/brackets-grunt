@@ -1,24 +1,137 @@
+#grunt-panel .filters {
+    margin: 0 auto
+}
+#grunt-panel .filters .btn {
+    cursor: pointer;
+    text-transform: capitalize
+}
+#grunt-panel .filters .btn.active:not([disabled]) {
+    color: #333;
+}
+.dark #grunt-panel .filters .btn.active:not([disabled]) {
+    color: #fff
+}
+#grunt-panel .box {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    display: block
+}
+#grunt-panel .box .row {
+    box-sizing: border-box;
+    width: 100%;
+    float: none;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 1px
+}
+#grunt-panel .box .row>span {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    padding: 7px 12px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+#grunt-panel .box .row>span>a {
+    top: 8px;
+    right: 12px;
+    width: auto;
+    color: #fff;
+    padding: 0 12px;
+    border-radius: 4px;
+    position: absolute
+}
+#grunt-panel .box .row>span quote {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    margin-top: 7px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+#grunt-panel .box .row>span quote>span {
+    display: block;
+    margin-bottom: 7px
+}
+#grunt-panel .box .row>span quote .stacks {
+    display: block
+}
+#grunt-panel .box .row>span quote .stacks small {
+    display: block;
+    font-size: 0.9em
+}
+#grunt-panel .box .row.odd>span {
+    background-color: rgba(0, 0, 0, 0)
+}
+#grunt-panel .box .row.error>span {
+    border-left: 3px solid #f74687
+}
+#grunt-panel .box .row.error>span>span {
+    color: #f74687
+}
+#grunt-panel .box .row.error>span>a {
+    background-color: #f74687
+}
+#grunt-panel .box .row.warn>span {
+    border-left: 3px solid #ff6500
+}
+#grunt-panel .box .row.warn>span>span {
+    color: #ff6500
+}
+#grunt-panel .box .row.warn>span>a {
+    background-color: #ff6500
+}
+#grunt-panel .box .row.debug>span {
+    border-left: 3px solid rgba(0, 0, 0, 0.15)
+}
+#grunt-panel .box .row.debug>span>a {
+    background-color: rgba(0, 0, 0, 0.15)
+}
+#brackets-grunt-button {
+    position: relative;
+    background: url('images/button.svg') no-repeat center top transparent
+}
+#brackets-grunt-button.active {
+    background-position: center bottom
+}
+#brackets-grunt-button .counts {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    border: 0;
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    display: none;
+    background: #f74687;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    text-align: center;
+    border-radius: 10px;
+    text-indent: -0.15em
+}
 /* Toolbar icon */
+
 #grunt-toolbar-icon {
-  background: url("../assets/grunt.png") no-repeat 0 0;
-
+    background: url("../assets/grunt.png") no-repeat 0 0;
 }
-
 #grunt-toolbar-icon.on {
-   background: url("../assets/grunt-on.png") no-repeat 0 0;
+    background: url("../assets/grunt-on.png") no-repeat 0 0;
 }
-
-.task-list{
-	overflow:
+.task-list {
+    overflow:
 }
-
-.task:hover
-{
-  color: black;
+.task:hover {
+    color: black;
 }
-
 .exec-button {
-	float:right;
-	cursor: pointer;
+    float: right;
+    cursor: pointer;
     width: 80px;
+}
+.close-btn {
+    float: right;
+    cursor: pointer;
 }

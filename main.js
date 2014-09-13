@@ -81,6 +81,10 @@ define(function (require, exports, module) {
 		panel.$panel.on("click", "#refresh", function (e) {
 			getTasks();
 		});
+
+        panel.$panel.on("click", "#close", function () {
+            togglePanel();
+        });
 		
 		$icon.on("click", togglePanel);
 		
