@@ -42,8 +42,6 @@ define(function (require, exports, module) {
 	function getTasks() {
 		gruntDomain.exec("getTasks", ProjectManager.getProjectRoot().fullPath)
 			.done(function (tasks) {
-				//togglePanel();
-				debugger;
 				var  _tasks = [];
 				var _keys = Object.keys(tasks);
 				_keys.forEach(function (key) {

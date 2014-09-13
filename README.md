@@ -1,8 +1,8 @@
 brackets-grunt
 ==============
-
 Extension that lists and runs Grunt tasks inside Brackets
-Based on the [brackets-grunt](https://github.com/dhategan/brackets-grunt) by Dragos Hategan (https://github.com/dhategan)
+
+Based on the [brackets-grunt](https://github.com/dhategan/brackets-grunt) by [Dragos Hategan](https://github.com/dhategan)
 
 #### Grunt-cli must be installed globally 
 
