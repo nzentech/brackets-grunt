@@ -43,8 +43,10 @@ define(function (require, exports, module) {
 		gruntDomain.exec("getTasks", ProjectManager.getProjectRoot().fullPath)
 			.done(function (tasks) {
 				//togglePanel();
+				debugger;
 				panel.$panel.find("#tasks").html(Mustache.render(taskTemplate, {tasks: tasks}));
 			}).fail(function (err) {
+				debugger;
 				console.error("[brackets-simple-node] failed to run simple.getMemory", err);
 			});
 	}
@@ -68,7 +70,12 @@ define(function (require, exports, module) {
 		ExtensionUtils.loadStyleSheet(module, "style/style.css");
 		
 		panel = PanelManager.createBottomPanel("grunt.panel", $(panelHtml), 100);
-		panel.$panel.on("click", ".task", function (e) {
+//		panel.$panel.on("click", ".task", function (e) {
+//			
+//			runTask(e.currentTarget.getAttribute("task-name"));
+//		});
+        
+        panel.$panel.on("click", ".exec-button", function (e) {
 			
 			runTask(e.currentTarget.getAttribute("task-name"));
 		});

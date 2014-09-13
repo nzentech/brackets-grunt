@@ -2,7 +2,7 @@
 	<table class="task-table table table-striped table-condensed row-highlight">
 	{{#tasks}}
 		<tr class="task" task-name="{{.}}">
-			<td>{{.}}</td>
+			<td>{{.}} <a class="exec-button btn btn-mini primary" task-name="{{.}}">Execute</a></td>
 		</tr>
 	{{/tasks}}
 	</table>

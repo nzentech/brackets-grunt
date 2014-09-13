@@ -15,6 +15,9 @@
 .task:hover
 {
   color: black;
-  cursor: pointer;
 }
 
+.exec-button {
+    text-align: right;
+	cursor: pointer;
+}
