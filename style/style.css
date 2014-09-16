@@ -137,5 +137,6 @@
 }
 
 #refresh {
-    text-align: right;
+    background: url("../assets/grunt.png") no-repeat 0 0;
+    padding-left:24px;
 }
